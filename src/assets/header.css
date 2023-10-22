@@ -1,0 +1,83 @@
+header {
+    height: 100vh;
+    background: linear-gradient(135deg, #013a6b 50%, #004e95 50.1%);
+}
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlist {
+    width: 50%;
+    gap: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    padding-left: 8%;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.navlinks {
+    color: #fff;
+    font-weight: 500;
+}
+.navlinks:hover {
+}
+header main {
+    color: #fff;
+    padding: 8%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+main .title {
+    color: #76d6ce;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+main .name {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+}
+main .skills {
+    text-wrap: wrap;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+main .media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    line-height: 3rem;
+}
+.media .media-titles {
+}
+.resume {
+    font-size: 1.25rem;
+    color: #013A6B;
+    font-weight: 700;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: max-content;
+    width: max-content;
+    border: none;
+    border-radius: 6px;
+    background: #76d6ce;
+    cursor: pointer;
+}
+.resume:hover{
+    border-radius: 30px;
+}

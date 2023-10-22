@@ -6,6 +6,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     outline: none;
-    font-family:'Poppins';
+    text-decoration: none;
+    list-style-type: none;
+    font-family:'Inter';
 }
 
