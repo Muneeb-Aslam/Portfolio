@@ -61,6 +61,9 @@ main .media {
     line-height: 3rem;
 }
 .media .media-titles {
+    text-align: center;
+    width: 40px;
+    margin-bottom: 10px;
 }
 .resume {
     font-size: 1.25rem;
