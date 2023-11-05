@@ -8,6 +8,14 @@
     outline: none;
     text-decoration: none;
     list-style-type: none;
-    font-family:'Inter';
+    font-family: "Inter";
 }
-
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: gray;
+}
+::-webkit-scrollbar-thumb {
+    background: #58595B;
+}
