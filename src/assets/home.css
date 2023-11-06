@@ -86,14 +86,14 @@ main .media {
     border-radius: 30px;
 }
 .about {
-    padding: 5% 0;
-    height: 80vh;
+    padding: 8% 0;
+    height: max-content;
     background-color: #1d1d23;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 3rem;
     color: #fff;
 }
 .about .title {
@@ -111,14 +111,33 @@ main .media {
     justify-content: center;
     align-items: flex-start;
     padding: 20px 15px;
-
-    gap: 10px;
+    gap: 15px;
 }
 main .mern {
     padding-left: 20px;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 900;
+    line-height: 2rem;
 }
 main .points {
     padding-bottom: 10px;
+}
+.heading{
+    padding-left: 22px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+main .skillslist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 22px;
+}
+.skillslist .point{
+    padding: 6px 9.23px 6px 10px;
+    font-size: .8rem;
+    border-radius: 16px;
+    border: 2px solid #A1AFC2;
 }
