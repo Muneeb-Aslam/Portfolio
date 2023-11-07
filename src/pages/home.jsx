@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../assets/home.css'
 import About from "../components/about";
+import Footer from "../components/footer";
 export default function Home() {
     return (
         <>
@@ -21,6 +22,7 @@ export default function Home() {
                 </main>
             </header>
             <About />
+            <Footer />
         </>
     )
 }
