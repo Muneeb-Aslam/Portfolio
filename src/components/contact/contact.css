@@ -1,3 +1,33 @@
-img{
+.contact-image{
     width:50%;
+}
+.contact-details{
+    align-self: flex-start;
+    width: 50%;
+}
+img{
+    width: 90%;
+}
+.contact{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-title{
+    font-weight: 700;
+    font-size: 4rem;
+    color: inherit;
+    align-self: center;
+}
+.contact-details{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5% 3%;
+    gap: 5%;
+}
+.contact-details .description{
+    font-size: 1.25rem;
 }

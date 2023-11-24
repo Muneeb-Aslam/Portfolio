@@ -11,22 +11,15 @@
     font-family: "Inter";
     user-select: none;
 }
-::-webkit-scrollbar {
-    width: 12px;
-}
-::-webkit-scrollbar-track {
-    background: gray;
-}
-::-webkit-scrollbar-thumb {
-    background: #58595B;
-}
 .footer{
-    color: #fff;
-    padding: 1%;
-    text-align: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #282833;
     font-size: 1.25rem;
-    font-weight: 400;
-    background-color: #1d1d23;
+    font-weight: 700;
+    background-color: inherit;
 }
 .footer .heart{
     color: red;

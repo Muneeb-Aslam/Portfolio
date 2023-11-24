@@ -1,5 +1,5 @@
 nav {
-    height: 12%;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,13 +14,13 @@ nav {
 }
 .logo {
     padding-left: 8%;
-    color: #fff;
+    color: #282833;
     font-size: 1.75rem;
     font-weight: 700;
 }
 
 .navlinks {
-    color: #fff;
+    color: #282833;;
     font-weight: 500;
 }
 .navlinks:hover {

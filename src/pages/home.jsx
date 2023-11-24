@@ -4,8 +4,8 @@ import {
     faFacebook,
     faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-import Nav from "../components/common/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Nav from "../components/common/Nav";
 import "../components/home/home.css";
 import About from "../components/home/about";
 import Footer from "../components/common/footer";
