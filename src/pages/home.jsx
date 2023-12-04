@@ -9,7 +9,6 @@ import Nav from "../components/common/Nav";
 import "../components/home/home.css";
 import About from "../components/home/about";
 import Footer from "../components/common/footer";
-import Project from "../components/home/project";
 export default function Home() {
     return (
         <>

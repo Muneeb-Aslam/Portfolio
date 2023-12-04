@@ -5,7 +5,6 @@ import {
     faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../contact/contact.css";
 import contactImage from "../contact/email.svg";
 
 function ContactComp() {
@@ -49,6 +48,7 @@ function ContactComp() {
                             />
                         </li>
                     </ul>
+                    <button className="resume">Resume</button>
 			</section>
         </main>
     );

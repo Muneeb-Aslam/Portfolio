@@ -1,0 +1,37 @@
+[
+    {
+        "name": "CGPA Calculator",
+        "description": "A website for calculating Semester and Cumulative GPA for NUST.",
+        "tech": ["React JS","CSS","Form Validation","Props","React Router"],
+        "github": "https://github.com/Muneeb-Aslam/CGPA-Calculator",
+        "live": "https://myreact-gpacalculator.netlify.app/"
+    },
+    {
+        "name": "Job Seeker UI",
+        "description": "User Interface (UI) for website Job Seeker. Login and Sign up Form, Dashboard for company and users.",
+        "tech": ["HTML","CSS","JS","Tailwind"],
+        "github": "https://github.com/Muneeb-Aslam/JobSeekingAppUI",
+        "live": "https://jobseekingappui.netlify.app/"
+    },
+    {
+        "name": "Tic Tac Toe",
+        "description": "A Web based TicTaeToe_Game for two players",
+        "tech": ["HTML","CSS","JS"],
+        "github": "https://github.com/Muneeb-Aslam/TicTaeToe_Game",
+        "live": "https://muneeb-aslam.github.io/TicTaeToe_Game/"
+    },
+    {
+        "name": "Analog Clock",
+        "description": "A website showing current time using analog clock",
+        "tech": ["HTML","CSS","JS"],
+        "github": "https://github.com/Muneeb-Aslam/AnalogClock",
+        "live": "https://muneeb-aslam.github.io/AnalogClock/"
+    },
+    {
+        "name": "Todo List",
+        "description": "A website to keep track of todos. User can add, edit, delete daily tasks",
+        "tech": ["React JS","CSS","Props"],
+        "github": "https://github.com/Muneeb-Aslam/TodoList",
+        "live": "https://my-reactjs-todolist.netlify.app/"
+    }
+]
