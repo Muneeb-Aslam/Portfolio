@@ -11,7 +11,7 @@ const Experience = () => {
                 <div className="description">
                     <p className="title">Experience</p>
                     <p>
-                        Currently, I&apos;m a Final Year student of Software Engineering at NUST. I have expertise in building the scalable solutions.
+                        Currently, I&apos;m a Final Year student of Software Engineering at NUST. I have expertise in building the solutions.
                     </p>
                 </div>
             </div>

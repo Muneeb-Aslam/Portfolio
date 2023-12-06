@@ -35,16 +35,6 @@ function About() {
               <li className="point">MySQL</li>
           </ul>
         </div>
-        <div className="concepts">
-          <div className="heading">Concepts</div>
-          <ul className="skillslist">
-              <li className="point">Object Oriented Programming</li>
-              <li className="point">Data Structure & Algorithm</li>
-              <li className="point">Database</li>
-              <li className="point">Networking</li>
-              <li className="point">Operating System</li>
-          </ul>
-        </div>
       </main>
     </section>
   )

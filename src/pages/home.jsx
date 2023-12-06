@@ -19,7 +19,7 @@ export default function Home() {
                         Hi! <p className="name">I am Muneeb Aslam</p>
                     </p>
                     <p className="skills">
-                        Full Stack Developer (MERN) 💻 - Student 👩‍🎓
+                        Front End Developer (React JS) 💻 - Student 👩‍🎓
                     </p>
                     <ul className="media">
                         <li className="media-titles">
