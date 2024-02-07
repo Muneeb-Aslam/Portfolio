@@ -9,10 +9,18 @@ import Nav from "../components/common/Nav";
 import "../components/home/home.css";
 import About from "../components/home/about";
 import Footer from "../components/common/footer";
+import React from "react";
 export default function Home() {
+    const [isLoaded, setIsLoaded] = React.useState(false);
+
+    React.useEffect(() => {
+      setTimeout(() => {
+        setIsLoaded(true);
+      }, 1000);
+    }, []);
     return (
         <>
-            <header>
+            <header className={`${isLoaded?'loaded':''}`}>
                 <Nav />
                 <main>
                     <p className="title">
@@ -51,7 +59,13 @@ export default function Home() {
                             />
                         </li>
                     </ul>
-                    <button className="resume">Resume</button>
+                    <a
+                        href="/Muneeb_Aslam_Resume.pdf"
+                        target="_blank"
+                        download="Muneeb_Aslam_Resume"
+                    >
+                        <button className="resume">Resume</button>
+                    </a>
                 </main>
             </header>
             <About />

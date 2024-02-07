@@ -38,44 +38,47 @@
     gap: 10%;
 }
 .projects-list {
+    color: black;
     padding: 5% 0;
     width: 80%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .projects-list .project-image {
-    object-fit: cover;
-    height: 350px;
-    width: 60%;
-    border-radius: 20px;
+    vertical-align: middle;
+    height: auto;
+    width: 70%;
+    border-radius: 28px 28px 0 0;
 }
 .projects-list .project-details {
+    padding: 1rem;
+    border-radius: 0 0 28px 28px;
+    background: #fff;
+    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.1), 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    gap: 20px;
     display: flex;
-    width: 40%;
-    height: 350px;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 5%;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    height: max-content;
 }
 .project-details .name {
+    width: 100%;
     font-size: 1.5rem;
 }
 .project-details .description {
-    padding: 30px 20px;
-    width: 130%;
-    border-radius: 28px;
-    background: #fff;
-    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.1),
-        0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: 100%;
     font-size: 1rem;
 }
 .project-details .tech {
-    width: 130%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 15px;
 }
 .tech p {
@@ -85,14 +88,48 @@
     border: 2px solid #a1afc2;
 }
 .project-details .links {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 10px;
+    padding-left: 7px;
 }
 .links a{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #282833E5;
+}
+
+
+@media (max-width:800px) {
+    .project-header{
+        flex-direction: column;
+    }   
+}
+@media (max-width:750px) {
+    .projects-list .project-image{
+        width: 90%;
+    }
+    .projects-list .project-details{
+        width: 90%;
+    }
+}
+
+@media (max-width:650px) {
+    .projects-list .project-image{
+        vertical-align: middle;
+        height: auto;
+        width: 100%;
+    }
+    .projects-list .project-details{
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) {
+    .project-header .title{
+        font-size: 2.5rem;
+    }
 }

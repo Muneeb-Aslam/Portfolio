@@ -3,6 +3,15 @@ import {faBars,faXmark} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../common/nav.css"
 function Nav(){
+    const handleClick = ()=>{
+        let menu = document.getElementById("menu")
+        menu.classList.add="open"
+        menu.style.display="block"
+    }
+    const handleCross = ()=>{
+        let menu = document.getElementById("menu")
+        menu.style.display="none"
+    }
     return (
         <nav>
             <Link className="logo" to={'/'}>Muneeb</Link>
@@ -12,16 +21,16 @@ function Nav(){
                 <li className="navitems"><Link className="navlinks" to={'/projects'}>Projects</Link></li>
                 <li className="navitems"><Link className="navlinks" to={'/about'}>Contact Me</Link></li>
             </ul>
-            <section className="menu">
-                <div className="menu-icon">
-                    <FontAwesomeIcon className="icons" icon={faBars} style={{color: "#282833",}} size="2x" />
-                </div>
+            <div className="menu-icon" onClick={handleClick}>
+                <FontAwesomeIcon className="icons" icon={faBars} style={{color: "#282833",}} size="2x" />
+            </div>
+            <section className="menu" id="menu">
                 <div className="head">
                     <Link className="navlinks" to={'/'}>Muneeb</Link>
-                    <FontAwesomeIcon icon={faXmark} style={{color: "#282833",}} size="2x" />
+                    <FontAwesomeIcon icon={faXmark} style={{color: "#282833",}} size="2x" onClick={handleCross}/>
                 </div>
                 <ul className="menu-list">
-                    <li className="navitems"><Link className="navlinks" to={'/'}>Home</Link></li>
+                    <li className="navitems"><Link className="navlinks" to='/'>Home</Link></li>
                     <li className="navitems"><Link className="navlinks" to={'/experience'}>Experience</Link></li>
                     <li className="navitems"><Link className="navlinks" to={'/projects'}>Projects</Link></li>
                     <li className="navitems"><Link className="navlinks" to={'/about'}>Contact Me</Link></li>

@@ -1,9 +1,14 @@
 header {
     height: 100vh;
-    background: linear-gradient(135deg, #A7EDE7 50%, #76D6CE 50.1%);
+    background: linear-gradient(to right bottom, #A7EDE7 50%, #76D6CE 50%);
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
 }
-body{
+body{ 
     background-color: #F2FAFC;
+}
+header.loaded{
+    opacity: 1;
 }
 header main {
     color: #fff;
@@ -58,7 +63,7 @@ main .media {
     border: 3px solid #22222B;
 }
 
-.resume {
+.resume{
     font-size: 1.25rem;
     color: #A7EDE7;
     font-weight: 700;

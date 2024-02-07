@@ -2,14 +2,13 @@
 /* eslint-disable react/prop-types */
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import liveicon from '../projects/images/live.png'
-import image from "../projects/images/cgpa.png";
 
 function Project(props) {
-    const {name,description,tech,github,live} = props.projects;
+    const {name,description,tech,github,live,image} = props.projects;
+
     return (
-        <div className="projects-list">
-            <img src={image} alt="" className="project-image" />
+        <a className="projects-list" href={live} target="blank">
+            <img src={`/images/${image}`} alt="" className="project-image" />
             <main className="project-details">
                 <div className="name">{name}</div>
                 <div className="description">{description}</div>
@@ -22,7 +21,7 @@ function Project(props) {
                 </div>
                 <ul className="links">
                     <li>
-                        <a href={github}>
+                        <a href={github} target="blank">
                             <FontAwesomeIcon
                                 className="icons"
                                 icon={faGithub}
@@ -31,13 +30,13 @@ function Project(props) {
                         </a>
                     </li>
                     <li>
-                        <a href={live}>
-                            <img src={liveicon} alt="live" className="live-icon"/>
+                        <a href={live} target="blank">
+                            <img src="/images/live.png" alt="live" className="live-icon"/>
                         </a>
                     </li>
                 </ul>
             </main>
-        </div>
+        </a>
     );
 }
 

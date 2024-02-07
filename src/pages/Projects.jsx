@@ -3,7 +3,6 @@ import Project from "../components/projects/projects";
 import Nav from "../components/common/Nav";
 import Footer from "../components/common/footer";
 import projects from "../components/projects/projects.json";
-import project_img from "../components/projects/images/project-img.svg";
 import "../components/projects/project.css";
 
 const Projects = () => {
@@ -11,7 +10,7 @@ const Projects = () => {
         <>
             <Nav />
             <div className="project-header">
-                <img src={project_img} alt="" />
+                <img src="/images/project-img.svg" alt="" className="main-img"/>
                 <div className="description">
                     <p className="title">Projects</p>
                     <p>
