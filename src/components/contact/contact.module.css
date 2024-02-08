@@ -1,0 +1,119 @@
+.contactImage{
+    width:50%;
+}
+.contactDetails{
+    align-self: flex-start;
+    width: 50%;
+}
+img{
+    width: 100%;
+    height: 480px;
+}
+.contact{
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contactTitle{
+    font-weight: 700;
+    font-size: 4rem;
+    color: inherit;
+    align-self: center;
+}
+.contactDetails{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5% 3%;
+    gap: 5%;
+}
+.contactDetails .description{
+    font-size: 1rem;
+}
+main .skills {
+    text-wrap: wrap;
+    color: #22222B;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+.media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    line-height: 3rem;
+}
+.media .mediaTitles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 3px solid #4B5563;
+    border-radius: 50%;
+}
+.mediaTitles .icons{
+    color: #4B5563;
+}
+.mediaTitles:hover{
+    color: #A7EDE7;
+    border: 3px solid #22222B;
+}
+
+.resume{
+    font-size: 1.25rem;
+    color: #A7EDE7;
+    font-weight: 700;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: max-content;
+    width: max-content;
+    border: none;
+    border-radius: 6px;
+    background: #004E95;
+    cursor: pointer;
+}
+.resume:hover {
+    border-radius: 30px;
+}
+
+
+
+
+
+@media (max-width:750px) {
+    .contact{
+        flex-direction: column;
+    }
+    .contactImage{
+        width: 80%;
+    }
+    img{
+        height: auto;
+    }
+    .contactDetails{
+        width: 100%;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+
+@media (max-width:550px) {
+    .contactDetails{
+        padding: .5rem 2rem;
+    }
+    .contactTitle{
+        font-size: 2.3rem;
+    }
+}

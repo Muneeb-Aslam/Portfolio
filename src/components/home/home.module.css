@@ -1,14 +1,9 @@
 header {
     height: 100vh;
     background: linear-gradient(to right bottom, #A7EDE7 50%, #76D6CE 50%);
-    opacity: 0;
-    transition: opacity 3s ease-in-out;
 }
 body{ 
     background-color: #F2FAFC;
-}
-header.loaded{
-    opacity: 1;
 }
 header main {
     color: #fff;
@@ -44,7 +39,7 @@ main .media {
     gap: 20px;
     line-height: 3rem;
 }
-.media .media-titles {
+.media .mediatitles {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,10 +50,10 @@ main .media {
     border: 3px solid #4B5563;
     border-radius: 50%;
 }
-.media-titles .icons{
+.mediatitles .icons{
     color: #4B5563;
 }
-.media-titles:hover{
+.mediatitles:hover{
     color: #A7EDE7;
     border: 3px solid #22222B;
 }

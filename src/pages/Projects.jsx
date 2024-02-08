@@ -3,16 +3,16 @@ import Project from "../components/projects/projects";
 import Nav from "../components/common/Nav";
 import Footer from "../components/common/footer";
 import projects from "../components/projects/projects.json";
-import "../components/projects/project.css";
+import styles from "../components/projects/project.module.css"
 
 const Projects = () => {
     return (
         <>
             <Nav />
-            <div className="project-header">
-                <img src="/images/project-img.svg" alt="" className="main-img"/>
-                <div className="description">
-                    <p className="title">Projects</p>
+            <div className={styles.projectHeader}>
+                <img src="/images/project-img.svg" alt="" className={styles.mainImg}/>
+                <div className={styles.description}>
+                    <p className={styles.title}>Projects</p>
                     <p>
                         I have used various technologies and tools comprising
                         ReactJs, NextJs, Redux, Hooks, Nodejs, ExpressJs,
@@ -21,7 +21,7 @@ const Projects = () => {
                     </p>
                 </div>
             </div>
-            <main className="lists">
+            <main className={styles.lists}>
                 {projects.map((items) => {
                     return <Project projects={items} />;
                 })}

@@ -1,0 +1,60 @@
+.projectHeader {
+    padding:3rem 20px 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.projectHeader img {
+    width: 50%;
+}
+.projectHeader .description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    padding: 5% 3%;
+    gap: 15px;
+    font-size: 1rem;
+}
+.projectHeader .title {
+    align-self: center;
+    color: inherit;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5rem;
+}
+main{
+    width: 100%;
+    margin-top: 2rem;
+    padding-left: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.experience{
+    width: 90%;
+    padding: 2rem;
+    border-radius: 28px;
+    background: #fff;
+    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.1), 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 1.5rem;
+}
+.experience img{
+    width: 70px;
+    height: 70px;
+}
+
+
+@media (max-width:800px) {
+    .projectHeader{
+        flex-direction: column;
+    } 
+    .projectHeader img {
+        width: 80%;
+    }  
+}

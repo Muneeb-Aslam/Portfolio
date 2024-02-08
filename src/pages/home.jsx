@@ -6,54 +6,48 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Nav from "../components/common/Nav";
-import "../components/home/home.css";
 import About from "../components/home/about";
 import Footer from "../components/common/footer";
-import React from "react";
-export default function Home() {
-    const [isLoaded, setIsLoaded] = React.useState(false);
+import styles from "../components/home/home.module.css"
 
-    React.useEffect(() => {
-      setTimeout(() => {
-        setIsLoaded(true);
-      }, 1000);
-    }, []);
+export default function Home() {
+
     return (
         <>
-            <header className={`${isLoaded?'loaded':''}`}>
+            <header>
                 <Nav />
                 <main>
-                    <p className="title">
-                        Hi! <p className="name">I am Muneeb Aslam</p>
+                    <p className={styles.title}>
+                        Hi! <p className={styles.name}>I am Muneeb Aslam</p>
                     </p>
-                    <p className="skills">
+                    <p className={styles.skills}>
                         Front End Developer (React JS) 💻 - Student 👩‍🎓
                     </p>
-                    <ul className="media">
-                        <li className="media-titles">
+                    <ul className={styles.media}>
+                        <li className={styles.mediatitles}>
                             <FontAwesomeIcon
-                                className="icons"
+                                className={styles.icons}
                                 icon={faGithub}
                                 size="lg"
                             />
                         </li>
-                        <li className="media-titles">
+                        <li className={styles.mediatitles}>
                             <FontAwesomeIcon
-                                className="icons"
+                                className={styles.icons}
                                 icon={faLinkedin}
                                 size="lg"
                             />
                         </li>
-                        <li className="media-titles">
+                        <li className={styles.mediatitles}>
                             <FontAwesomeIcon
-                                className="icons"
+                                className={styles.icons}
                                 icon={faFacebook}
                                 size="lg"
                             />
                         </li>
-                        <li className="media-titles">
+                        <li className={styles.mediatitles}>
                             <FontAwesomeIcon
-                                className="icons"
+                                className={styles.icons}
                                 icon={faGoogle}
                                 size="lg"
                             />
@@ -64,15 +58,15 @@ export default function Home() {
                         target="_blank"
                         download="Muneeb_Aslam_Resume"
                     >
-                        <button className="resume">Resume</button>
+                        <button className={styles.resume}>Resume</button>
                     </a>
                 </main>
             </header>
             <About />
-            <section className="projects">
-                <div className="title">
+            <section className={styles.projects}>
+                <div className={styles.title}>
                     Projects
-                    <div className="description">
+                    <div className={styles.description}>
                         From Concept to Code: Building the Future, One Project
                         at a Click
                     </div>

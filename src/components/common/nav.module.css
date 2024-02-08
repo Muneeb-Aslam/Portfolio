@@ -28,7 +28,7 @@ nav {
 .navlinks:hover {
     border-bottom: 3px solid #004E95;
 }
-.menu-icon{
+.menuIcon{
     display: none;
 }
 .menu{
@@ -55,7 +55,7 @@ nav {
     font-weight: 900;
     font-size: 2rem;
 }
-.menu .menu-list{
+.menu .menuList{
     color: #4B5563;
     font-size: 1.25rem;
     gap: 30px;
@@ -69,7 +69,7 @@ nav {
     .navlist{
         display: none;
     }
-    .menu-icon{
+    .menuIcon{
         display: block;
         padding-right: 3rem;
     }

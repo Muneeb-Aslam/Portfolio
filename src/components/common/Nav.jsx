@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
 import {faBars,faXmark} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../common/nav.css"
+import styles from "./nav.module.css"
+
 function Nav(){
     const handleClick = ()=>{
         let menu = document.getElementById("menu")
@@ -14,26 +15,26 @@ function Nav(){
     }
     return (
         <nav>
-            <Link className="logo" to={'/'}>Muneeb</Link>
-            <ul className="navlist">
-                <li className="navitems"><Link className="navlinks" to={'/'}>Home</Link></li>
-                <li className="navitems"><Link className="navlinks" to={'/experience'}>Experience</Link></li>
-                <li className="navitems"><Link className="navlinks" to={'/projects'}>Projects</Link></li>
-                <li className="navitems"><Link className="navlinks" to={'/about'}>Contact Me</Link></li>
+            <Link className={styles.logo} to={'/'}>Muneeb</Link>
+            <ul className={styles.navlist}>
+                <li className={styles.navitems}><Link className={styles.navlinks} to={'/'}>Home</Link></li>
+                <li className={styles.navitems}><Link className={styles.navlinks} to={'/experience'}>Experience</Link></li>
+                <li className={styles.navitems}><Link className={styles.navlinks} to={'/projects'}>Projects</Link></li>
+                <li className={styles.navitems}><Link className={styles.navlinks} to={'/about'}>Contact Me</Link></li>
             </ul>
-            <div className="menu-icon" onClick={handleClick}>
-                <FontAwesomeIcon className="icons" icon={faBars} style={{color: "#282833",}} size="2x" />
+            <div className={styles.menuIcon} onClick={handleClick}>
+                <FontAwesomeIcon className={styles.icons} icon={faBars} style={{color: "#282833",}} size="2x" />
             </div>
-            <section className="menu" id="menu">
-                <div className="head">
-                    <Link className="navlinks" to={'/'}>Muneeb</Link>
+            <section className={styles.menu} id="menu">
+                <div className={styles.head}>
+                    <Link className={styles.navlinks} to={'/'}>Muneeb</Link>
                     <FontAwesomeIcon icon={faXmark} style={{color: "#282833",}} size="2x" onClick={handleCross}/>
                 </div>
-                <ul className="menu-list">
-                    <li className="navitems"><Link className="navlinks" to='/'>Home</Link></li>
-                    <li className="navitems"><Link className="navlinks" to={'/experience'}>Experience</Link></li>
-                    <li className="navitems"><Link className="navlinks" to={'/projects'}>Projects</Link></li>
-                    <li className="navitems"><Link className="navlinks" to={'/about'}>Contact Me</Link></li>
+                <ul className={styles.menuList}>
+                    <li className={styles.navitems}><Link className={styles.navlinks} to='/'>Home</Link></li>
+                    <li className={styles.navitems}><Link className={styles.navlinks} to={'/experience'}>Experience</Link></li>
+                    <li className={styles.navitems}><Link className={styles.navlinks} to={'/projects'}>Projects</Link></li>
+                    <li className={styles.navitems}><Link className={styles.navlinks} to={'/about'}>Contact Me</Link></li>
                 </ul>
             </section>
         </nav>

@@ -1,0 +1,14 @@
+[
+    {
+        "logo":"/images/thebytewise_logo.jpeg",
+        "name": "Bytewise Limited",
+        "title": "Front End Intern",
+        "duration": "March/2023 - April/2023",
+        "location": "Remote",
+        "description": [
+            "Building responsive websites using React.js, HTML, CSS, and Tailwind CSS",
+            "Coordinating and Managing projects using Git and GitHub",
+            "Deploying websites using GitHub Pages and Netlify"
+        ]
+    }
+]
