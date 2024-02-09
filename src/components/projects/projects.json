@@ -8,14 +8,6 @@
         "image":"cgpa.png"
     },
     {
-        "name": "Job Seeker UI",
-        "description": "User Interface (UI) for website Job Seeker. Login and Sign up Form, Dashboard for company and users.",
-        "tech": ["HTML","CSS","JS","Tailwind"],
-        "github": "https://github.com/Muneeb-Aslam/JobSeekingAppUI",
-        "live": "https://jobseekingappui.netlify.app/",
-        "image":"jobui.png"
-    },
-    {
         "name": "Tic Tac Toe",
         "description": "A Web based TicTaeToe_Game for two players",
         "tech": ["HTML","CSS","JS"],

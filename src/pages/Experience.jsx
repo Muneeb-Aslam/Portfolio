@@ -20,7 +20,7 @@ const Experience = () => {
                     </p>
                 </div>
             </div>
-            <main>
+            <main className={styles.experiencemain}>
                 {ExperienceList.map((items) => {
                     return <ExperienceComponent items={items} />;
                 })}

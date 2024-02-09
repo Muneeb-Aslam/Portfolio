@@ -25,15 +25,15 @@
     font-size: 4rem;
     line-height: 5rem;
 }
-main{
+.experiencemain{
     width: 100%;
     margin-top: 2rem;
-    padding-left: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
+    margin-bottom: 3rem;
 }
 .experience{
     width: 90%;
@@ -48,7 +48,35 @@ main{
     width: 70px;
     height: 70px;
 }
-
+.details{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.first, .second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+h4{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.third{
+    margin-top: 5px;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+p{
+    font-size: 1rem;
+}
 
 @media (max-width:800px) {
     .projectHeader{
@@ -57,4 +85,13 @@ main{
     .projectHeader img {
         width: 80%;
     }  
+    .details{
+        justify-content: center;
+        align-items: center;
+    }
+    .first, .second{
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }

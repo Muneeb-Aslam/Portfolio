@@ -6,16 +6,16 @@ const ExperienceComponent = (props) => {
   return (
     <section className={styles.experience}>
       <img src={logo} alt="" />
-      <section>
-        <div>
-          <h3>{title}</h3>
-          <h3>{duration}</h3>
+      <section className={styles.details}>
+        <div className={styles.first}>
+          <h3 className={styles.title}>{title}</h3>
+          <h4>{duration}</h4>
         </div>
-        <div>
+        <div className={styles.second}>
           <h3>{name}</h3>
-          <h3>{location}</h3>
+          <h4>{location}</h4>
         </div>
-        <div>
+        <div className={styles.third}>
           {description.map((item)=>{
             return <p>- {item}</p>
           })}

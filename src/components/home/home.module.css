@@ -12,6 +12,7 @@ header main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     gap: 10px;
 }
 main .title {
@@ -80,7 +81,6 @@ main .media {
 .about,.projects {
     padding: 8% 0 6% 0;
     height: max-content;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +89,8 @@ main .media {
     color: #22222B;
 }
 .projects{
-    padding: 4% 0 6% 0;
+    padding: 10px;
+    margin-bottom: 2rem;
 }
 .about .title , .projects .title{
     text-align: center;
@@ -115,7 +116,7 @@ main .mern {
     line-height: 2rem;
 }
 main .points {
-    padding-bottom: 10px;
+    line-height: 1.5rem;
 }
 .heading{
     padding-left: 22px;
@@ -139,4 +140,19 @@ main .skillslist{
 .projects .title .description{
     padding-top: 15px;
     font-size: 1.75rem;
+}
+
+@media (max-width:800px) {
+    .about main{
+        width: 80%;
+    }
+}
+
+@media (max-width:550px) {
+    main .name {
+        font-size: 4rem;
+    }
+    main .skills {
+        font-size: 1.2rem;
+    }
 }

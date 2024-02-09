@@ -8,10 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Nav from "../components/common/Nav";
 import About from "../components/home/about";
 import Footer from "../components/common/footer";
-import styles from "../components/home/home.module.css"
+import styles from "../components/home/home.module.css";
 
 export default function Home() {
-
     return (
         <>
             <header>
@@ -25,32 +24,52 @@ export default function Home() {
                     </p>
                     <ul className={styles.media}>
                         <li className={styles.mediatitles}>
-                            <FontAwesomeIcon
-                                className={styles.icons}
-                                icon={faGithub}
-                                size="lg"
-                            />
+                            <a
+                                href="https://github.com/Muneeb-Aslam"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FontAwesomeIcon
+                                    className={styles.icons}
+                                    icon={faGithub}
+                                    size="lg"
+                                />
+                            </a>
                         </li>
                         <li className={styles.mediatitles}>
-                            <FontAwesomeIcon
-                                className={styles.icons}
-                                icon={faLinkedin}
-                                size="lg"
-                            />
+                            <a
+                                href="https://www.linkedin.com/in/muneeb-aslaam/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FontAwesomeIcon
+                                    className={styles.icons}
+                                    icon={faLinkedin}
+                                    size="lg"
+                                />
+                            </a>
                         </li>
                         <li className={styles.mediatitles}>
-                            <FontAwesomeIcon
-                                className={styles.icons}
-                                icon={faFacebook}
-                                size="lg"
-                            />
+                            <a
+                                href="https://www.facebook.com/muneeb.official.686332?mibextid=ZbWKwL"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FontAwesomeIcon
+                                    className={styles.icons}
+                                    icon={faFacebook}
+                                    size="lg"
+                                />
+                            </a>
                         </li>
                         <li className={styles.mediatitles}>
-                            <FontAwesomeIcon
-                                className={styles.icons}
-                                icon={faGoogle}
-                                size="lg"
-                            />
+                            <a href="mailto:muneebbaslam@gmail.com">
+                                <FontAwesomeIcon
+                                    className={styles.icons}
+                                    icon={faGoogle}
+                                    size="lg"
+                                />
+                            </a>
                         </li>
                     </ul>
                     <a

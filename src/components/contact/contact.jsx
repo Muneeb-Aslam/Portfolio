@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import contactImage from "../contact/email.svg";
-import styles from "./contact.module.css"
+import styles from "./contact.module.css";
 
 function ContactComp() {
     return (
@@ -25,7 +25,11 @@ function ContactComp() {
                 </div>
                 <ul className={styles.media}>
                     <li className={styles.mediaTitles}>
-                        <a href="https://github.com/Muneeb-Aslam" target="_blank" rel="noreferrer"> 
+                        <a
+                            href="https://github.com/Muneeb-Aslam"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <FontAwesomeIcon
                                 className={styles.icons}
                                 icon={faGithub}
@@ -34,7 +38,11 @@ function ContactComp() {
                         </a>
                     </li>
                     <li className={styles.mediaTitles}>
-                        <a href="https://www.linkedin.com/in/muneeb-aslaam/" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://www.linkedin.com/in/muneeb-aslaam/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <FontAwesomeIcon
                                 className={styles.icons}
                                 icon={faLinkedin}
@@ -43,12 +51,17 @@ function ContactComp() {
                         </a>
                     </li>
                     <li className={styles.mediaTitles}>
-                        <a href=""></a>
-                        <FontAwesomeIcon
-                            className={styles.icons}
-                            icon={faFacebook}
-                            size="lg"
-                        />
+                        <a
+                            href="https://www.facebook.com/muneeb.official.686332?mibextid=ZbWKwL"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <FontAwesomeIcon
+                                className={styles.icons}
+                                icon={faFacebook}
+                                size="lg"
+                            />
+                        </a>
                     </li>
                     <li className={styles.mediaTitles}>
                         <a href="mailto:muneebbaslam@gmail.com">

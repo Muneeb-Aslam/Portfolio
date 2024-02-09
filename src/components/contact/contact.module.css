@@ -34,13 +34,6 @@ img{
 .contactDetails .description{
     font-size: 1rem;
 }
-main .skills {
-    text-wrap: wrap;
-    color: #22222B;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 3rem;
-}
 .media {
     display: flex;
     justify-content: flex-start;
@@ -102,6 +95,7 @@ main .skills {
         height: auto;
     }
     .contactDetails{
+        padding: .5rem 2rem;
         width: 100%;
         align-items: center;
         gap: 1.5rem;
